@@ -48,7 +48,7 @@ def main():
 		text = 'Картиночка'
 		card = {
 			"type": "BigImage",
-			"image_id": 457239017,
+			"image_id": 457239018,
 			"title": "Картинка",
 			"description": "Картиночка",
 		} 
