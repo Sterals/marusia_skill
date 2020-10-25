@@ -11,7 +11,6 @@ def marusya():
 	return "Marusya"
 
 @app.route("/sequence", methods=['POST'])
-
 def main():
 	logging.info("Request: %r", request.json)
 	card = {}
