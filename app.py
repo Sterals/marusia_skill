@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask import Flask
 
 app = Flask(__name__)
@@ -10,7 +11,7 @@ def index():
 def marusya():
 	return "Marusya"
 
-@app.route("/main", methods=['POST', 'GET'])
+@app.route("/sequence", methods=['POST'])
 def main():
 	logging.info("Request: %r", request.json)
 	card = {}
