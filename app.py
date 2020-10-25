@@ -58,7 +58,7 @@ def main():
 
 	elif request.json['request']['command'] == 'кнопки':
 		text = 'Кнопочки'
-
+		buttons = [{'title':"blue pill"}, {"title":"red pill"}]
 
 	# elif request.json['request']['command'] == 'debug':
 	# 	text = json.dumps(request.json)
