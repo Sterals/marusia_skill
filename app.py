@@ -37,9 +37,9 @@ def main():
 	buttons = []
 
 	if request.json['session']['new']:
-		text = "Привет! Назови любые несколько чисел, а я продолжу! Например: один, два, шесть!"
-	# elif request.json['request']['command'] == 'on_interrupt':
-	# 	text = 'Приходи еще изучать последовательность! Пока!'
+		text = "Привет!"
+	elif request.json['request']['command'] == 'on_interrupt':
+		text = 'Приходи еще изучать последовательность! Пока!'
 	# elif request.json['request']['command'] == 'debug':
 	# 	text = json.dumps(request.json)
 	# elif request.json['request']['command'] == 'играть':
