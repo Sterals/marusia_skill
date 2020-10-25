@@ -40,6 +40,20 @@ def main():
 		text = "Привет!"
 	elif request.json['request']['command'] == 'on_interrupt':
 		text = 'Приходи еще изучать последовательность! Пока!'
+
+	elif request.json['request']['command'] == 'привет':
+		text = 'Привет!'
+
+	elif request.json['request']['command'] == 'картинка':
+		text = 'Картиночка'
+
+	elif request.json['request']['command'] == 'карусель':
+		text = 'Каруселечка'
+
+	elif request.json['request']['command'] == 'кнопки':
+		text = 'Кнопочки'
+
+
 	# elif request.json['request']['command'] == 'debug':
 	# 	text = json.dumps(request.json)
 	# elif request.json['request']['command'] == 'играть':
