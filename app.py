@@ -1,7 +1,14 @@
 # -*- coding: utf-8 -*-
 import logging
 
-from flask import Flask
+import json
+import logging
+
+# Импортируем подмодули Flask для запуска веб-сервиса.
+from flask import Flask, request
+application = Flask(__name__)
+
+from __future__ import unicode_literals
 
 app = Flask(__name__)
 app.debug = True
