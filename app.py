@@ -10,7 +10,7 @@ def index():
 def marusya():
 	return "Marusya"
 
-@app.route("/main", methods=['POST'])
+@app.route("/main", methods=['POST', 'GET'])
 def main():
 	logging.info("Request: %r", request.json)
 	card = {}
