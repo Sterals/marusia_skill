@@ -46,6 +46,12 @@ def main():
 
 	elif request.json['request']['command'] == 'картинка':
 		text = 'Картиночка'
+		card = {
+			"type": "BigImage",
+			"image_id": 457239017,
+			"title": "Картинка",
+			"description": "Картиночка",
+		} 
 
 	elif request.json['request']['command'] == 'карусель':
 		text = 'Каруселечка'
