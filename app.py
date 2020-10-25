@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 import logging
 
 import json
@@ -8,7 +9,7 @@ import logging
 from flask import Flask, request
 application = Flask(__name__)
 
-from __future__ import unicode_literals
+
 
 app = Flask(__name__)
 app.debug = True
