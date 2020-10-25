@@ -1,7 +1,18 @@
 # -*- coding: utf-8 -*-
+import logging
+
 from flask import Flask
 
 app = Flask(__name__)
+app.debug = True
+
+logging.basicConfig(level=logging.DEBUG)
+
+sessionStorage = {}
+
+@app.route("/")
+def hello():
+	return "Welcome to my page"
 
 @app.route('/index')
 def index():
