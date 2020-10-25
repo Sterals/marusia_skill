@@ -10,7 +10,7 @@ def index():
 def marusya():
 	return "Marusya"
 
-@app.route("sequence", methods=['POST'])
+@app.route("/sequence", methods=['POST'])
 
 def main():
 	logging.info("Request: %r", request.json)
@@ -27,7 +27,7 @@ def main():
 		text = "Отлично! Попробуй угадай следующее число: 1, 4, 9, 16, 25..."
 		card = {
 				"type": "BigImage",
-				"image_id": 457239019,
+				"image_id": 457239017,
 				"title": "Угадай последовательность",
 				"description": "Угадай последовательность",
 			} 
