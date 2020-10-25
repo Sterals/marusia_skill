@@ -38,19 +38,19 @@ def main():
 
 	if request.json['session']['new']:
 		text = "Привет! Назови любые несколько чисел, а я продолжу! Например: один, два, шесть!"
-	elif request.json['request']['command'] == 'on_interrupt':
-		text = 'Приходи еще изучать последовательность! Пока!'
-	elif request.json['request']['command'] == 'debug':
-		text = json.dumps(request.json)
-	elif request.json['request']['command'] == 'играть':
-		text = "Отлично! Попробуй угадай следующее число: 1, 4, 9, 16, 25..."
-		card = {
-				"type": "BigImage",
-				"image_id": 457239017,
-				"title": "Угадай последовательность",
-				"description": "Угадай последовательность",
-			} 
-		buttons = [{'title':"36"}, {"title":"49"}]
+	# elif request.json['request']['command'] == 'on_interrupt':
+	# 	text = 'Приходи еще изучать последовательность! Пока!'
+	# elif request.json['request']['command'] == 'debug':
+	# 	text = json.dumps(request.json)
+	# elif request.json['request']['command'] == 'играть':
+	# 	text = "Отлично! Попробуй угадай следующее число: 1, 4, 9, 16, 25..."
+	# 	card = {
+	# 			"type": "BigImage",
+	# 			"image_id": 457239017,
+	# 			"title": "Угадай последовательность",
+	# 			"description": "Угадай последовательность",
+	# 		} 
+	# 	buttons = [{'title':"36"}, {"title":"49"}]
 	else:
 		text = request.json['request']['command']
 	response = {
