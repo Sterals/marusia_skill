@@ -68,5 +68,18 @@ def main():
 
 	return json.dumps (response, ensure_ascii=False, indent=2)
 
+
+@app.route("/debug", methods=['POST'])
+def debug():
+	response = {
+	"version":request.json['version'],
+	'session':request.json['session'],
+	"response": {
+		"end_session": False,
+		"text" : "hi"
+	}}
+	return response
+
+
 if __name__ == '__main__':
 	app.run(debug=True)
