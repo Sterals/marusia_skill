@@ -22,6 +22,8 @@ def main():
 	elif request.json['request']['command'] == 'on_interrupt':
 		text = 'Приходи еще изучать последовательность! Пока!'
 	elif request.json['request']['command'] == 'debug':
+		text = json.dumps(request.json)
+	elif request.json['request']['command'] == 'играть':
 		text = "Отлично! Попробуй угадай следующее число: 1, 4, 9, 16, 25..."
 		card = {
 				"type": "BigImage",
@@ -46,6 +48,6 @@ def main():
 	logging.info("response %r", response)
 
 	return json.dumps (response, ensure_ascii=False, indent=2)
-	
+
 if __name__ == '__main__':
 	app.run(debug=True)
