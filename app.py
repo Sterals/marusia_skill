@@ -39,7 +39,7 @@ def main():
 	if request.json['session']['new']:
 		text = "Привет!"
 	elif request.json['request']['command'] == 'on_interrupt':
-		text = 'Приходи еще изучать последовательность! Пока!'
+		text = 'Пока!'
 
 	elif request.json['request']['command'] == 'привет':
 		text = 'Привет!'
