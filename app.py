@@ -57,7 +57,7 @@ def main():
 		text = 'Каруселечка'
 		card = {
 			"type": "ItemsList",
-			"items": [{"image_id":457239018, "image_id":457239017, "image_id":457239019}],
+			"items": [{"image_id":457239018, "image_id":457239019, "image_id":457239017}],
 			# "title": "Заголовок для изображения",
 			# "description": "Описание изображения"
 		} 
