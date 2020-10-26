@@ -49,8 +49,8 @@ def main():
 		card = {
           "type":"BigImage",
           "image_id":457239019,
-          "title": "Заголовок для изображения",
-          "description": "Описание изображения"
+          # "title": "Заголовок для изображения",
+          # "description": "Описание изображения"
 		} 
 
 	elif request.json['request']['command'] == 'карусель':
@@ -58,8 +58,8 @@ def main():
 		card = {
 			"type": "ItemsList",
 			"items": [457239018, 457239017, 457239019],
-			"title": "Заголовок для изображения",
-			"description": "Описание изображения"
+			# "title": "Заголовок для изображения",
+			# "description": "Описание изображения"
 		} 
 
 	elif request.json['request']['command'] == 'кнопки':
@@ -75,7 +75,7 @@ def main():
 			"end_session": False,
 			"text" : text,
 			"card" : card, 
-			'buttons' : buttons 
+			"buttons" : buttons 
 		}
 
 	}
