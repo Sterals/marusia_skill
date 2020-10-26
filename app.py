@@ -47,10 +47,10 @@ def main():
 	elif request.json['request']['command'] == 'картинка':
 		text = 'Картиночка'
 		card = {
-			"type": "BigImage",
-			"image_id": 457239018,
-			"title": "Картинка",
-			"description": "Картиночка",
+          "type":"BigImage",
+          "image_id":239017,
+          "title": "Заголовок для изображения",
+          "description": "Описание изображения"
 		} 
 
 	elif request.json['request']['command'] == 'карусель':
@@ -58,25 +58,14 @@ def main():
 		card = {
 			"type": "ItemsList",
 			"items": [457239018, 457239017],
-			"title": "Картинка",
-			"description": "Картиночка",
+			"title": "Заголовок для изображения",
+			"description": "Описание изображения"
 		} 
 
 	elif request.json['request']['command'] == 'кнопки':
 		text = 'Кнопочки'
 		buttons = [{'title':"blue pill"}, {"title":"red pill"}]
 
-	# elif request.json['request']['command'] == 'debug':
-	# 	text = json.dumps(request.json)
-	# elif request.json['request']['command'] == 'играть':
-	# 	text = "Отлично! Попробуй угадай следующее число: 1, 4, 9, 16, 25..."
-	# 	card = {
-	# 			"type": "BigImage",
-	# 			"image_id": 457239017,
-	# 			"title": "Угадай последовательность",
-	# 			"description": "Угадай последовательность",
-	# 		} 
-	# 	buttons = [{'title':"36"}, {"title":"49"}]
 	else:
 		text = request.json['request']['command']
 	response = {
